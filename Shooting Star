@@ -1,0 +1,50 @@
+var xPos1 = 0;
+var yPos1 = 370;
+var ellipseSize1=30;
+
+var xPos2=10;
+var yPos2=320;
+var ellipseSize2=30;
+
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    ellipse(xPos1, yPos1, ellipseSize1, ellipseSize1);//star1
+    ellipse(xPos2,yPos2,ellipseSize2,ellipseSize2);//star2
+    
+    //stars
+    ellipse(37,79,20,20);
+    ellipse(166,13,35,35);
+    ellipse(337,109,12,12);
+    ellipse(256,82,14,14);
+    
+    //buildings
+    fill(153, 153, 153);
+    rect(346,248,57,158);
+    rect(297,306,57,94);
+    rect(250,177,57,227);
+    rect(205,342,57,94);
+    rect(0,160,57,254);
+    rect(157,272,50,139);
+    rect(106,299,57,115);
+    rect(52,238,76,164);
+    
+    //animation_1
+    xPos1=xPos1+8;
+    yPos1=yPos1-6;
+    ellipseSize1=ellipseSize1*0.992;
+    
+    
+    
+    //animation_2
+    xPos2=xPos2+7;
+    yPos2=yPos2-9;
+    ellipseSize2=ellipseSize2*0.992;
+};
+
+
+
+
+
+
+
